@@ -1,9 +1,9 @@
 import http from "http";
 
 const myserver = http.createServer(requestHandler);
-const rendomNumber = Math.floor(Math.random() * 100);
+const randomNumber = Math.floor(Math.random() * 100);
 function requestHandler(req, res) {
-  res.write(` hello number: ${rendomNumber}`);
+  res.write(` hello number: ${randomNumber}`);
   res.end(" from the backend");
 }
 
